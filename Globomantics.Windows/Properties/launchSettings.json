@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Globomantics.Windows (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Globomantics.Windows (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
