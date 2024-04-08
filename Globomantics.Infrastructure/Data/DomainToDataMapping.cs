@@ -37,6 +37,8 @@ public class DomainToDataMapping
             Severity = (Data.Models.Severity)bug.Severity,
             Title = bug.Title,
             Description = bug.Description,
+            AssignedToId = bug.AssignedTo?.Id,
+            CreatedById = bug.CreatedBy?.Id
         };
     } 
     
@@ -53,6 +55,8 @@ public class DomainToDataMapping
             Title = feature.Title,
             Description = feature.Description,
             Priority = feature.Priority,
+            AssignedToId = feature.AssignedTo?.Id,
+            CreatedById = feature.CreatedBy?.Id
         };
     }
 
@@ -66,6 +70,7 @@ public class DomainToDataMapping
             IsCompleted = task.IsCompleted,
             IsDeleted = task.IsDeleted,
             Title = task.Title,
+            CreatedById = task.CreatedBy?.Id
         };
     }
 }

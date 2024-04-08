@@ -49,7 +49,6 @@ public partial class MainWindow : Window
             (sender, message) => {
             CreateTodoControlContainer.Children.Clear();
         });
-
     }
 
     protected async override void OnActivated(EventArgs e)
