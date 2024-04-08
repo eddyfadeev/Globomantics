@@ -66,12 +66,10 @@ public partial class App : Application
         }
         catch (Exception ex)
         {
-            // TODO: Log the exception
+            
         }
         
         var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
-        
-        //mainWindow.Activate();
         
         mainWindow?.Show();
     }
